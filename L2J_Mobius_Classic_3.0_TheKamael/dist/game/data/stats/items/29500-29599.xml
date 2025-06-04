@@ -303,13 +303,13 @@
 			<skill id="55000" level="2" /> <!-- XP/SP Scroll lvl 1 (30%) -->
 		</skills>
 	</item>
-	<item id="29520" name="VIP Coin" type="EtcItem">
+	<item id="29520" name="Terra Coin" type="EtcItem">
 		<!-- Used for purchasing various items through Dimensional Merchants. Cannot be exchanged, dropped, or sold. -->
 		<set name="icon" val="BranchIcon.Icon.etc_vip_coin_i00" />
 		<set name="material" val="LIQUID" />
-		<set name="is_tradable" val="false" />
+		<set name="is_tradable" val="true" />
 		<set name="is_dropable" val="false" />
-		<set name="is_sellable" val="false" />
+		<set name="is_sellable" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
 	</item>

@@ -28,31 +28,29 @@ public class CurrencyManager extends AbstractNpcAI
 {
 	private CurrencyManager()
 	{
-		
+		addStartNpc(1002100);
+		addFirstTalkId(1002100);
+		addTalkId(1002100);
 	}
 	
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
-		System.out.println(event);
 		switch (event)
 		{
 			
-			case "adentrade":
-				return "1002100/adena_trade.htm";
-			case "ancienttrade":
-				return "1002100-1.htm";
-			case "terratrade":
-				return "1002100/terra_trade.htm";
+			case "armorshop":
+				return "shoparmor.htm";
+			
+			default:
+				return null;
 		}
-		return null;
 	}
 	
 	@Override
 	public String onFirstTalk(Npc npc, Player player)
 	{
-		System.out.println(player);
-		return "1002100.htm";
+		return "1002100.html";
 	}
 	
 	public static void main(String[] args)
