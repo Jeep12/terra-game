@@ -17,4 +17,11 @@
 		<production count="1000" id="29564" />
 
 	</item>
+	<item>
+		<!-- Adena -->
+		<ingredient count="1" id="29520" />
+		<!-- Ring of Seal -->
+		<production count="1000000" id="57" />
+
+	</item>
 </list>

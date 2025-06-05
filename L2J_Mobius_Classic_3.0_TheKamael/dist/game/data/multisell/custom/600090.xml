@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/multisell.xsd">
+	<npcs>
+		<npc>1002100</npc> <!-- CB -->
+	</npcs>
+	
+    <!-- Damascus -->
+    <item>
+        <ingredient id="29564" count="20000" />
+        <production id="79" count="1" />
+    </item>
+
+    <!-- Guardian Sword -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="7883" count="1" />
+    </item>
+
+    <!-- Demon Dagger -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="234" count="1" />
+    </item>
+
+    <!-- Twilight Knife -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="243" count="1" />
+    </item>
+
+    <!-- Peril -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="287" count="1" />
+    </item>
+
+    <!-- Bellion Cestus -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="268" count="1" />
+    </item>
+
+    <!-- Lance -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="97" count="1" />
+    </item>
+
+    <!-- Aoba -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="175" count="1" />
+    </item>
+
+    <!-- Deadman Glory -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="171" count="1" />
+    </item>
+
+    <!-- Spell Breaker -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="7892" count="1" />
+    </item>
+
+    <!-- Staff of Evil Spirit -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="210" count="1" />
+    </item>
+
+    <!-- Star Buster -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="7901" count="1" />
+    </item>
+
+    <!-- Dismantler -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="91885" count="1" />
+    </item>
+
+    <!-- Colichemarde -->
+    <item>
+        <ingredient id="29564" count="16000" />
+        <production id="91900" count="1" />
+    </item>
+</list>

@@ -3,22 +3,118 @@
 	<npcs>
 		<npc>1002100</npc> <!-- CB -->
 	</npcs>
-	<item>
-		<!-- Adena -->
-		<ingredient count="3500" id="29564" />
+ <item>
+        <ingredient id="29564" count="500" />
+        <production id="352" count="1" />
+    </item>
 
-		<production count="1" id="352" />
-        <production count="1" id="2378" />
-        <production count="1" id="2411" />
-        <production count="1" id="2425" />
-        <production count="1" id="2493" />
+    <!-- Brigandine Gaiters -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="2378" count="1" />
+    </item>
+
+    <!-- Brigandine Helmet -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="2411" count="1" />
+    </item>
+
+    <!-- Brigandine Boots -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="2425" count="1" />
+    </item>
+
+    <!-- Brigandine Gloves -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="2449" count="1" />
+    </item>
+
+    <!-- Brigandine Shield -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="2493" count="1" />
+    </item>
+
+
+	   <item>
+        <ingredient id="29564" count="500" />
+        <production id="395" count="1" />
+    </item>
+
+    <!-- Manticore Gaiters -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="417" count="1" />
+    </item>
+
+    <!-- Manticore Boots -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="2424" count="1" />
+    </item>
+
+    <!-- Manticore Gloves -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="2448" count="1" />
+    </item>
+
+    <!-- Knowledge Tunic -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="436" count="1" />
+    </item>
+
+    <!-- Knowledge Pants -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="469" count="1" />
+    </item>
+
+    <!-- Knowledge Boots -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="2423" count="1" />
+    </item>
+
+    <!-- Knowledge Gloves -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="2447" count="1" />
+    </item>
+	
+
+
+    <!-- Elven Mithril Tunic -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="437" count="1" />
+    </item>
+
+    <!-- Elven Mithril Pants -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="470" count="1" />
+    </item>
+	   <!-- Elven Mithril Boots -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="2426" count="1" />
+    </item>
+    <!-- Elven Mithril Gloves -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="2450" count="1" />
+    </item>
+
+ 
 
 
 
 
 
-
-
-	</item>
 
 </list>

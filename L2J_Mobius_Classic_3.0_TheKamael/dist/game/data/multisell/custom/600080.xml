@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/multisell.xsd">
+	<npcs>
+		<npc>1002100</npc> <!-- CB -->
+	</npcs>
+    <!-- Berserker Blade -->
+    <item>
+        <ingredient id="29564" count="8000" />
+        <production id="5286" count="1" />
+    </item>
+
+    <!-- Samurai -->
+    <item>
+        <ingredient id="29564" count="10000" />
+        <production id="135" count="1" />
+    </item>
+
+    <!-- Raid -->
+    <item>
+        <ingredient id="29564" count="4000" />
+        <production id="133" count="1" />
+    </item>
+
+    <!-- Katana -->
+    <item>
+        <ingredient id="29564" count="4000" />
+        <production id="74" count="1" />
+    </item>
+
+    <!-- Crystal Dagger -->
+    <item>
+        <ingredient id="29564" count="8000" />
+        <production id="228" count="1" />
+    </item>
+
+    <!-- Eminence -->
+    <item>
+        <ingredient id="29564" count="8000" />
+        <production id="286" count="1" />
+    </item>
+
+    <!-- Great Pata -->
+    <item>
+        <ingredient id="29564" count="8000" />
+        <production id="266" count="1" />
+    </item>
+
+    <!-- Orcish Poleaxe -->
+    <item>
+        <ingredient id="29564" count="8000" />
+        <production id="299" count="1" />
+    </item>
+
+    <!-- Yaksa -->
+    <item>
+        <ingredient id="29564" count="8000" />
+        <production id="2503" count="1" />
+    </item>
+
+    <!-- Ecliptic Axe -->
+    <item>
+        <ingredient id="29564" count="8000" />
+        <production id="7891" count="1" />
+    </item>
+
+    <!-- Dwarven Hammer -->
+    <item>
+        <ingredient id="29564" count="8000" />
+        <production id="7897" count="1" />
+    </item>
+        <!-- Demon Staff -->
+    <item>
+        <ingredient id="29564" count="8000" />
+        <production id="206" count="1" />
+    </item>
+            <!-- Ghoul Staff -->
+    <item>
+        <ingredient id="29564" count="8000" />
+        <production id="205" count="1" />
+    </item>
+
+    <!-- Sabre Tooth -->
+    <item>
+        <ingredient id="29564" count="8000" />
+        <production id="91882" count="1" />
+    </item>
+
+    <!-- Blinzlasher -->
+    <item>
+        <ingredient id="29564" count="8000" />
+        <production id="91897" count="1" />
+    </item>
+</list>

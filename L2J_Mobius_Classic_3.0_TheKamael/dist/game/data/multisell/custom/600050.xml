@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/multisell.xsd">
+	<npcs>
+		<npc>1002100</npc> <!-- CB -->
+	</npcs>
+
+
+     <!-- Karmian Tunic -->
+    <item>
+        <ingredient id="29564" count="1000" />
+        <production id="439" count="1" />
+    </item>
+
+    <!-- Karmian Pants -->
+    <item>
+        <ingredient id="29564" count="1000" />
+        <production id="471" count="1" />
+    </item>
+
+    <!-- Karmian Gloves -->
+    <item>
+        <ingredient id="29564" count="1000" />
+        <production id="2454" count="1" />
+    </item>
+
+    <!-- Karmian Boots -->
+    <item>
+        <ingredient id="29564" count="500" />
+        <production id="2430" count="1" />
+    </item>
+ 
+    <!-- Demon Tunic -->
+    <item>
+        <ingredient id="29564" count="1500" />
+        <production id="441" count="1" />
+    </item>
+
+    <!-- Demon Pants -->
+    <item>
+        <ingredient id="29564" count="1500" />
+        <production id="472" count="1" />
+    </item>
+
+    <!-- Demon Boots -->
+    <item>
+        <ingredient id="29564" count="1000" />
+        <production id="2435" count="1" />
+    </item>
+
+    <!-- Demon Gloves -->
+    <item>
+        <ingredient id="29564" count="1500" />
+        <production id="2459" count="1" />
+    </item>
+
+  <!-- Divine Tunic -->
+  <item>
+    <ingredient id="29564" count="2000" />
+    <production id="442" count="1" />
+  </item>
+
+  <!-- Divine Pants -->
+  <item>
+    <ingredient id="29564" count="2000" />
+    <production id="473" count="1" />
+  </item>
+
+  <!-- Divine Boots -->
+  <item>
+    <ingredient id="29564" count="1000" />
+    <production id="603" count="1" />
+  </item>
+
+  <!-- Divine Gloves -->
+  <item>
+    <ingredient id="29564" count="1500" />
+    <production id="2463" count="1" />
+  </item>
+
+
+        <!-- Full Plate Breastplate -->
+    <item>
+        <ingredient id="29564" count="4500" />
+        <production id="356" count="1" />
+    </item>
+
+    <!-- Full Plate Helmet -->
+    <item>
+        <ingredient id="29564" count="1500" />
+        <production id="2414" count="1" />
+    </item>
+
+    <!-- Full Plate Boots -->
+    <item>
+        <ingredient id="29564" count="1000" />
+        <production id="2438" count="1" />
+    </item>
+
+    <!-- Full Plate Gloves -->
+    <item>
+        <ingredient id="29564" count="1000" />
+        <production id="2462" count="1" />
+    </item>
+
+    <!-- Full Plate Shield -->
+    <item>
+        <ingredient id="29564" count="1000" />
+        <production id="2497" count="1" />
+    </item>
+  <!-- Drake Leather Armor Breastplate -->
+  <item>
+    <ingredient id="29564" count="4500" />
+    <production id="401" count="1" />
+  </item>
+
+  <!-- Drake Leather Armor Boots -->
+  <item>
+    <ingredient id="29564" count="1500" />
+    <production id="2437" count="1" />
+  </item>
+
+  <!-- Drake Leather Armor Gloves -->
+  <item>
+    <ingredient id="29564" count="1000" />
+    <production id="2461" count="1" />
+  </item>
+
+  <!-- Plated Leather Armor Breastplate -->
+  <item>
+    <ingredient id="29564" count="2000" />
+    <production id="398" count="1" />
+  </item>
+
+  <!-- Plated Leather Armor Pants -->
+  <item>
+    <ingredient id="29564" count="2000" />
+    <production id="418" count="1" />
+  </item>
+
+  <!-- Plated Leather Armor Boots -->
+  <item>
+    <ingredient id="29564" count="2000" />
+    <production id="2431" count="1" />
+  </item>
+
+  <!-- Plated Leather Armor Gloves -->
+  <item>
+    <ingredient id="29564" count="1000" />
+    <production id="2455" count="1" />
+  </item>
+
+
+</list>

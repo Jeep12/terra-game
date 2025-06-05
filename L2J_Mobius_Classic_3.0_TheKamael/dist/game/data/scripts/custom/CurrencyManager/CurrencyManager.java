@@ -41,7 +41,10 @@ public class CurrencyManager extends AbstractNpcAI
 			
 			case "armorshop":
 				return "shoparmor.htm";
-			
+			case "weaponshop":
+				return "shopweapon.htm";
+			case "jewelshop":
+				return "shopjewel.htm";
 			default:
 				return null;
 		}
