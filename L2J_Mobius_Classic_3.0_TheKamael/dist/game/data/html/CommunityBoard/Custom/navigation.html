@@ -1,26 +1,108 @@
-<table valign="top">
-<tr>
-<td height=25></td>
-</tr>
-<tr>
-	<td><button value="Home" action="bypass _bbstop;home.html" width=200 height=30 back="L2UI_CT1.HtmlWnd_DF_Area_Down" fore="L2UI_CT1.HtmlWnd_DF_Area"></td>
-</tr>
-<tr>
-	<td><button value="Buffer" action="bypass _bbstop;buffer/main.html" width=200 height=30 back="L2UI_CT1.HtmlWnd_DF_Level_Down" fore="L2UI_CT1.HtmlWnd_DF_Level"></td>
-</tr>
-<tr>
-	<td><button value="Merchant" action="bypass _bbstop;merchant/main.html" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_BuyEquip_Down" fore="L2UI_CT1.OlympiadWnd_DF_BuyEquip"></td>
-</tr>
-<tr>
-	<td><button value="Gatekeeper" action="bypass _bbstop;gatekeeper/main.html" width=200 height=30 back="L2UI_CT1.HtmlWnd_DF_Campaign_Down" fore="L2UI_CT1.HtmlWnd_DF_Campaign"></td>
-</tr>
-<tr>
-	<td><button value="Drop Search" action="bypass _bbstop;dropsearch/main.html" width=200 height=30 back="L2UI_CT1.HtmlWnd_DF_Area_Down" fore="L2UI_CT1.HtmlWnd_DF_Area"></td>
-</tr>
-<tr>
-	<td><button value="Delevel" action="bypass _bbstop;delevel/main.html" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Back_Down" fore="L2UI_CT1.OlympiadWnd_DF_Back"></td>
-</tr>
-<tr>
-	<td><button value="Premium" action="bypass _bbstop;premium/main.html" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Reward_Down" fore="L2UI_CT1.OlympiadWnd_DF_Reward"></td>
-</tr>
+<table cellpadding="5" cellspacing="0" width="180">
+
+	<tr>
+		<td colspan="1" align="center" height="100">
+			<img src="L2UI_CT1.FactionWnd.emblem_blackbird" width="64" height="64" alt="Avatar" />
+		</td>
+	</tr>
+
+
+	<!-- Datos del jugador: todo en una columna -->
+	<tr>
+		<td >
+			<table cellpadding="2" cellspacing="2" width="100%">
+				<tr bgcolor="1E1E1E">
+					<td style="padding-left:5px;">
+						<font color="808080"><b>Char:</b>
+							<font color="LEVEL">&nbsp;%player_name%</font>
+						</font>
+					</td>
+				</tr>
+				<tr bgcolor="2A2A2A">
+					<td style="padding-left:5px;">
+						<font color="808080"><b>Clan:</b>
+							<font color="LEVEL">&nbsp;%clan_name%</font>
+						</font>
+					</td>
+				</tr>
+				<tr bgcolor="1E1E1E">
+					<td style="padding-left:5px;">
+						<font color="808080"><b>Premium:</b>
+							<font color="LEVEL">&nbsp;%premium_status%</font>
+						</font>
+					</td>
+				</tr>
+				<tr bgcolor="2A2A2A">
+					<td style="padding-left:5px;">
+						<font color="808080"><b>Expiration:</b>
+							<font color="LEVEL">&nbsp;%vip_expiration%</font>
+						</font>
+					</td>
+				</tr>
+				<tr bgcolor="1E1E1E">
+					<td style="padding-left:5px;">
+						<font color="808080"><b>PVP:</b>
+							<font color="LEVEL">&nbsp;%pvp_kills%</font>
+						</font>
+					</td>
+				</tr>
+				<tr bgcolor="2A2A2A">
+					<td style="padding-left:5px;">
+						<font color="808080"><b>PK:</b>
+							<font color="LEVEL">&nbsp; %pk_kills%</font>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td height="10"></td>
+	</tr>
+	<tr>
+		<td>
+
+			<center><img src="L2EssenceCommunity.effect_top" width=167 height=18></center>
+		</td>
+
+	</tr>
+
+	<!-- Menú -->
+	<tr>
+		<td>
+			<button value="Home" action="bypass _bbstop;home.html" width="177" height="32"
+				back="L2EssenceCommunity.gmshop_btn_over" fore="L2EssenceCommunity.gmshop_btn"></button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<button value="Buffer" action="bypass _bbstop;buffer/main.html" width="177" height="32"
+				back="L2UI_CT1.HtmlWnd_DF_Level_Down" fore="L2UI_CT1.HtmlWnd_DF_Level"></button>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<button value="Drop Search" action="bypass _bbstop;dropsearch/main.html" width="177" height="32"
+				back="L2UI_CT1.HtmlWnd_DF_Area_Down" fore="L2UI_CT1.HtmlWnd_DF_Area"></button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<button value="Delevel" action="bypass _bbstop;delevel/main.html" width="177" height="32"
+				back="L2UI_CT1.OlympiadWnd_DF_Back_Down" fore="L2UI_CT1.OlympiadWnd_DF_Back"></button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<button value="Premium" action="bypass _bbstop;premium/main.html" width="177" height="32"
+				back="L2UI_CT1.OlympiadWnd_DF_Reward_Down" fore="L2UI_CT1.OlympiadWnd_DF_Reward"></button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<center><img src="L2EssenceCommunity.effect_bottom" width=167 height=18></center>
+		</td>
+	</tr>
 </table>

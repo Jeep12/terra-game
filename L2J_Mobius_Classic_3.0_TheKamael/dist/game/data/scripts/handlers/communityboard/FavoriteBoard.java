@@ -16,17 +16,10 @@
  */
 package handlers.communityboard;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.text.SimpleDateFormat;
-
-import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.gameserver.cache.HtmCache;
 import org.l2jmobius.gameserver.handler.CommunityBoardHandler;
 import org.l2jmobius.gameserver.handler.IParseBoardHandler;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.util.Util;
 
 /**
  * Favorite board.
@@ -35,15 +28,13 @@ import org.l2jmobius.gameserver.util.Util;
 public class FavoriteBoard implements IParseBoardHandler
 {
 	// SQL Queries
-	private static final String SELECT_FAVORITES = "SELECT * FROM `bbs_favorites` WHERE `playerId`=? ORDER BY `favAddDate` DESC";
-	private static final String DELETE_FAVORITE = "DELETE FROM `bbs_favorites` WHERE `playerId`=? AND `favId`=?";
-	private static final String ADD_FAVORITE = "REPLACE INTO `bbs_favorites`(`playerId`, `favTitle`, `favBypass`) VALUES(?, ?, ?)";
+	// private static final String SELECT_FAVORITES = "SELECT * FROM `bbs_favorites` WHERE `playerId`=? ORDER BY `favAddDate` DESC";
 	
 	private static final String[] COMMANDS =
 	{
 		"_bbsgetfav",
-		"bbs_add_fav",
-		"_bbsdelfav_"
+		"_tcservices",
+		"_tcmiscellaneous"
 	};
 	
 	@Override
@@ -55,88 +46,70 @@ public class FavoriteBoard implements IParseBoardHandler
 	@Override
 	public boolean parseCommunityBoardCommand(String command, Player player)
 	{
-		// None of this commands can be added to favorites.
+		System.out.println("Hola desde favorito");
+		System.out.println("Comando " + command);
+		
+		// Armar el menú de botones (merchant_nav) solo 1 vez
+		StringBuilder sb = new StringBuilder();
+		sb.append("<table width=180 >");
+		sb.append("<tr><td height=60></td></tr>");
+		
+		String[][] buttons =
+		{
+			{
+				"Home",
+				"_bbsgetfav;merchant.html"
+			},
+			
+			{
+				"Services",
+				"_tcservices;tcservices.html"
+			},
+			{
+				"Miscellaneous",
+				"_tcmiscellaneous;tcmiscellaneous.html"
+			},
+			// { "Sell", "_bbssell;merchant.html" },
+			
+			// otros botones si querés
+		};
+		
+		for (String[] btn : buttons)
+		{
+			sb.append("<tr>");
+			sb.append("<td align=\"center\">");
+			sb.append("<button value=\"").append(btn[0]).append("\" action=\"bypass ").append(btn[1]).append("\" width=160 height=42 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></button>");
+			sb.append("</td>");
+			sb.append("</tr>");
+		}
+		sb.append("</table>");
+		
 		if (command.startsWith("_bbsgetfav"))
 		{
-			// Load Favorite links
-			final String list = HtmCache.getInstance().getHtm(player, "data/html/CommunityBoard/favorite_list.html");
-			final StringBuilder sb = new StringBuilder();
-			try (Connection con = DatabaseFactory.getConnection();
-				PreparedStatement ps = con.prepareStatement(SELECT_FAVORITES))
-			{
-				ps.setInt(1, player.getObjectId());
-				try (ResultSet rs = ps.executeQuery())
-				{
-					while (rs.next())
-					{
-						String link = list.replace("%fav_bypass%", rs.getString("favBypass"));
-						link = link.replace("%fav_title%", rs.getString("favTitle"));
-						final SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-						link = link.replace("%fav_add_date%", date.format(rs.getTimestamp("favAddDate")));
-						link = link.replace("%fav_id%", String.valueOf(rs.getInt("favId")));
-						sb.append(link);
-					}
-				}
-				String html = HtmCache.getInstance().getHtm(player, "data/html/CommunityBoard/favorite.html");
-				html = html.replace("%fav_list%", sb.toString());
-				CommunityBoardHandler.separateAndSend(html, player);
-			}
-			catch (Exception e)
-			{
-				LOG.warning(FavoriteBoard.class.getSimpleName() + ": Couldn't load favorite links for " + player);
-			}
-		}
-		else if (command.startsWith("bbs_add_fav"))
-		{
-			final String bypass = CommunityBoardHandler.getInstance().removeBypass(player);
-			if (bypass != null)
-			{
-				final String[] parts = bypass.split("&", 2);
-				if (parts.length != 2)
-				{
-					LOG.warning(FavoriteBoard.class.getSimpleName() + ": Couldn't add favorite link, " + bypass + " it's not a valid bypass!");
-					return false;
-				}
-				
-				try (Connection con = DatabaseFactory.getConnection();
-					PreparedStatement ps = con.prepareStatement(ADD_FAVORITE))
-				{
-					ps.setInt(1, player.getObjectId());
-					ps.setString(2, parts[0].trim());
-					ps.setString(3, parts[1].trim());
-					ps.execute();
-					// Callback
-					parseCommunityBoardCommand("_bbsgetfav", player);
-				}
-				catch (Exception e)
-				{
-					LOG.warning(FavoriteBoard.class.getSimpleName() + ": Couldn't add favorite link " + bypass + " for " + player);
-				}
-			}
-		}
-		else if (command.startsWith("_bbsdelfav_"))
-		{
-			final String favId = command.replace("_bbsdelfav_", "");
-			if (!Util.isDigit(favId))
-			{
-				LOG.warning(FavoriteBoard.class.getSimpleName() + ": Couldn't delete favorite link, " + favId + " it's not a valid ID!");
-				return false;
-			}
+			String htmlTemplate = HtmCache.getInstance().getHtm(player, "data/html/CommunityBoard/merchant.html");
+			htmlTemplate = htmlTemplate.replace("%merchant_nav%", sb.toString());
+			CommunityBoardHandler.separateAndSend(htmlTemplate, player);
 			
-			try (Connection con = DatabaseFactory.getConnection();
-				PreparedStatement ps = con.prepareStatement(DELETE_FAVORITE))
-			{
-				ps.setInt(1, player.getObjectId());
-				ps.setInt(2, Integer.parseInt(favId));
-				ps.execute();
-				// Callback
-				parseCommunityBoardCommand("_bbsgetfav", player);
-			}
-			catch (Exception e)
-			{
-				LOG.warning(FavoriteBoard.class.getSimpleName() + ": Couldn't delete favorite link ID " + favId + " for " + player);
-			}
 		}
+		else if (command.startsWith("_tcservices"))
+		{
+			String htmlTemplate = HtmCache.getInstance().getHtm(player, "data/html/CommunityBoard/tcservices.html");
+			htmlTemplate = htmlTemplate.replace("%merchant_nav%", sb.toString());
+			CommunityBoardHandler.separateAndSend(htmlTemplate, player);
+		}
+		else if (command.startsWith("_tcmiscellaneous"))
+		{
+			String htmlTemplate = HtmCache.getInstance().getHtm(player, "data/html/CommunityBoard/tcmiscellaneous.html");
+			htmlTemplate = htmlTemplate.replace("%merchant_nav%", sb.toString());
+			CommunityBoardHandler.separateAndSend(htmlTemplate, player);
+		}
+		
+		else if (command.startsWith("_bbsmultisell") || command.startsWith("_bbsexcmultisell") || command.startsWith("_bbssell"))
+		{
+			return false; // Dejalo que lo maneje otro handler como HomeBoard
+		}
+		
 		return true;
 	}
+	
 }

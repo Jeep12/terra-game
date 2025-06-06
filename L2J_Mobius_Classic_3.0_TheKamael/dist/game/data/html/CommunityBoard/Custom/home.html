@@ -1,48 +1,352 @@
 <html noscrollbar>
-	<body>
-		<table width=700>
-			<tr>
-				<td height=10></td>
-			</tr>
-		</table>
-		<table width=20>
-			<tr>
-				<td>
-					%navigation%
-				</td>
-				<td>
-					<center>
-						<table border=0 cellpadding=0 cellspacing=0 width=555 height=455 background="L2UI_CT1.Windows_DF_TooltipBG">
-							<tr>
-								<td align="center">
-									<img src="L2UI_CT1.HtmlWnd_DF_TextureKnight" width=300 height=220>
-								</td>
-							</tr>
-							<tr>
-								<td align="center" height=240>
-									<font name="hs12" color="CDB67F">Welcome to our Community Board</font>
-								</td>
-							</tr>
-						</table>
-						<table border=0 cellpadding=0 cellspacing=0 width=555>
-							<tr>
-								<td height=10></td>
-							</tr>
-						</table>
-						<table border=0 cellpadding=0 cellspacing=0 width=555 background="L2UI_CT1.Windows_DF_TooltipBG">
-							<tr>
-								<td height=17></td>
-							</tr>
-							<tr>
-								<td align=center><font color=696969>LINEAGE II - COMMUNITY BOARD</font></td>
-							</tr>
-							<tr>
-								<td height=15></td>
-							</tr>
-						</table>
-					</center>
-				</td>
-			</tr>
-		</table>
-	</body>
+<title>Community Board</title>
+
+<body>
+	<br><br><br><br>
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<!-- COLUMNA IZQUIERDA: NAVIGATION -->
+			<td width="200" valign="top">
+				%navigation%
+			</td>
+
+			<!-- COLUMNA DERECHA: CONTENIDO PRINCIPAL -->
+			<td valign="top" align="center">
+				<table width="90%" height="600" cellpadding="10" cellspacing="0">
+					<tr>
+						<td>
+							<!-- server info -->
+							<center>
+								<table width=560>
+									<tr>
+										<td height=16></td>
+									</tr>
+									<tr>
+										<td width=10></td>
+										<td width=150>
+											<font color="808080">L2 Terra: </font>
+											<font color="LEVEL">Classic 3.0</font>
+										</td>
+										<td width=110></td>
+										<td width=80>
+											<font color="808080">Exp:</font> <font color="LEVEL"> 5x </font>
+										</td>
+										<td width=100>
+											<font color="808080">Adena:</font> <font color="LEVEL"> 5x </font>
+										</td>
+										<td width=100>
+											<font color="808080">Drop:</font> <font color="LEVEL"> 5x </font>
+										</td>
+									</tr>
+									<tr>
+										<td height=10></td>
+									</tr>
+									<tr>
+										<td width=10></td>
+										<td width=150>
+											<font color="808080">Online:</font>
+											<font color="LEVEL">1920</font>
+										</td>
+										<td width=110></td>
+										<td width=80>
+											<font color="808080">Exp party:</font><font color="LEVEL"> 6x </font>
+										</td>
+										<td width=100>
+											<font color="808080">Adena party:</font> <font color="LEVEL"> 6x </font>
+										</td>
+										<td width=100>
+											<font color="808080">Drop party:</font> <font color="LEVEL"> 6x </font>
+										</td>
+									</tr>
+									<tr>
+										<td height=16></td>
+									</tr>
+								</table>
+							</center>
+							<br>
+
+							<!-- donation store -->
+							<center>
+								<table width=560 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+									<tr>
+										<td width="304">
+											<table width="304">
+												<tr>
+													<td height=10></td>
+												</tr>
+												<tr>
+													<td align="center">
+														<font name="hs22" color="LEVEL">Terra Store</font>
+													</td>
+												</tr>
+												<tr>
+													<td height=10></td>
+												</tr>
+												<tr>
+													<td>
+														<table width="284" align="center">
+															<tr>
+																<td width=34><img src="L2EssenceCommunity.donate_item_1"
+																		width=32 height=32></td>
+																<td>
+																	<font color="FFFFFF">Item Name<br1>
+																			<font name="hs15" color="LEVEL">90 Coin of
+																				Luck</font>
+																	</font>
+																</td>
+															</tr>
+															<tr>
+																<td height=10></td>
+															</tr>
+															<tr>
+																<td width=34><img
+																		src="BranchIcon.Icon.etc_vip_present_i00"
+																		width=32 height=32></td>
+																<td>
+																	<font color="FFFFFF">Package Terra<br1>
+																			<font name="hs15" color="LEVEL">30 Terra
+																				Coin</font>
+																	</font>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height=20></td>
+												</tr>
+												<tr>
+													<td align="center">
+														<button value="Visit Merchant" action="bypass _bbshome"
+															width=255 height=33
+															back="L2EssenceCommunity.donate_items_btn_over"
+															fore="L2EssenceCommunity.donate_items_btn">
+													</td>
+												</tr>
+												<tr>
+													<td height=20></td>
+												</tr>
+											</table>
+										</td>
+
+										<td width="236">
+											<img src="L2UI_CT1.HtmlWnd.HtmlWnd_ClassMark_158" width="236" height="206">
+
+										</td>
+									</tr>
+
+								</table>
+							</center>
+							<br>
+
+							<!-- buy premium -->
+							<center>
+								<table width=560 cellspacing=5 cellpadding=0>
+									<tr>
+										<!-- 1 Day -->
+										<td valign="top" width=180>
+											<table background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg" width=175>
+												<tr>
+													<td height=2></td>
+												</tr>
+												<tr>
+													<td align="center"><img src="L2EssenceCommunity.premium_crown"
+															width=74 height=50></td>
+												</tr>
+												<tr>
+													<td align="center">
+														<font color="LEVEL">1 Day Premium</font>
+													</td>
+												</tr>
+												<tr>
+													<td align="center">
+														<table cellpadding=3 cellspacing=0>
+															<tr>
+																<td><img src="BranchIcon.Icon.etc_vip_coin_i00" width=32
+																		height=32></td>
+																<td width="120">
+																	<font name="hs12" color="LEVEL">50 Terra Coin</font>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height=10></td>
+												</tr>
+												<tr>
+													<td align="center">
+														<button value="Buy Premium" action="bypass _bbshome" width=154
+															height=27 back="L2EssenceCommunity.buy_premium_btn_over"
+															fore="L2EssenceCommunity.buy_premium_btn">
+													</td>
+												</tr>
+												<tr>
+													<td height=10></td>
+												</tr>
+											</table>
+										</td>
+
+										<!-- 7 Day -->
+										<td valign="top" width=180>
+											<table background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg" width=175>
+												<tr>
+													<td height=2></td>
+												</tr>
+												<tr>
+													<td align="center"><img src="L2EssenceCommunity.premium_crown"
+															width=74 height=50></td>
+												</tr>
+												<tr>
+													<td align="center">
+														<font color="LEVEL">7 Day Premium</font>
+													</td>
+												</tr>
+												<tr>
+													<td align="center">
+														<table cellpadding=3 cellspacing=0>
+															<tr>
+																<td><img src="BranchIcon.Icon.etc_vip_coin_i00" width=32
+																		height=32></td>
+																<td width="120">
+																	<font name="hs12" color="LEVEL">150 Terra Coin
+																	</font>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height=10></td>
+												</tr>
+												<tr>
+													<td align="center">
+														<button value="Buy Premium" action="bypass _bbshome" width=154
+															height=27 back="L2EssenceCommunity.buy_premium_btn_over"
+															fore="L2EssenceCommunity.buy_premium_btn">
+													</td>
+												</tr>
+												<tr>
+													<td height=10></td>
+												</tr>
+											</table>
+										</td>
+
+										<!-- 30 Day -->
+										<td valign="top" width=180>
+											<table background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg" width=175>
+												<tr>
+													<td height=2></td>
+												</tr>
+												<tr>
+													<td align="center"><img src="L2EssenceCommunity.premium_crown"
+															width=74 height=50></td>
+												</tr>
+												<tr>
+													<td align="center">
+														<font color="LEVEL">30 Day Premium</font>
+													</td>
+												</tr>
+												<tr>
+													<td align="center">
+														<table cellpadding=3 cellspacing=0>
+															<tr>
+																<td><img src="BranchIcon.Icon.etc_vip_coin_i00" width=32
+																		height=32></td>
+																<td width="120">
+																	<font name="hs12" color="LEVEL">300 Terra Coin
+																	</font>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height=10></td>
+												</tr>
+												<tr>
+													<td align="center">
+														<button value="Buy Premium" action="bypass _bbshome" width=154
+															height=27 back="L2EssenceCommunity.buy_premium_btn_over"
+															fore="L2EssenceCommunity.buy_premium_btn">
+													</td>
+												</tr>
+												<tr>
+													<td height=10></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</center>
+
+							<br>
+							<!-- setting information -->
+							<center>
+								<table width=560 cellspacing=5 cellpadding=0>
+									<tr>
+										<td align="center">
+											<font color="LEVEL">Settings</font>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" colspan="2">
+											<!-- Contenedor para centrar los dos botones -->
+											<table cellspacing=10 cellpadding=0>
+												<tr>
+													<!-- Bot Telegram -->
+													<td>
+														<table background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg" width=175>
+															<tr>
+																<td height=10></td>
+															</tr>
+															<tr>
+																<td align="center">
+																	<button value="Bot Telegram"
+																		action="bypass _bbstelegram" width=154 height=27
+																		back="L2EssenceCommunity.buy_premium_btn_over"
+																		fore="L2EssenceCommunity.buy_premium_btn">
+																</td>
+															</tr>
+															<tr>
+																<td height=10></td>
+															</tr>
+														</table>
+													</td>
+
+													<!-- Commands -->
+													<td>
+														<table background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg" width=175>
+															<tr>
+																<td height=10></td>
+															</tr>
+															<tr>
+																<td align="center">
+																	<button value="Commands"
+																		action="bypass _bbscommands" width=154 height=27
+																		back="L2EssenceCommunity.buy_premium_btn_over"
+																		fore="L2EssenceCommunity.buy_premium_btn">
+																</td>
+															</tr>
+															<tr>
+																<td height=10></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</center>
+
+							<br>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
 </html>

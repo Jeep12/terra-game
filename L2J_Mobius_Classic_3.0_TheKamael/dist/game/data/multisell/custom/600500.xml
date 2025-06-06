@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/multisell.xsd">
+	<npcs>
+		<npc>-1</npc> <!-- CB -->
+	</npcs>
+    <item>
+        <ingredient id="29564" count="50" />
+        <production id="1539" count="10" />
+    </item>
+        <item>
+        <ingredient id="29564" count="30" />
+        <production id="5592" count="5" />
+    </item>
+    
+</list>
